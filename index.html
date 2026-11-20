@@ -586,7 +586,7 @@ const D = s => state.upper ? s.toUpperCase() : s.toLowerCase();
 let ROUND = store.get('round', 5);
 
 /* ---------- Idioma ---------- */
-let lang = store.get('lang', (navigator.language || '').toLowerCase().startsWith('en') ? 'en' : 'pt');
+let lang = store.get('lang', 'pt');           // por defeito em português; o botão PT/EN guarda a escolha
 if (!PACKS[lang]) lang = 'pt';
 let P = null;
 const VOWELS = ['a','e','i','o','u'];
