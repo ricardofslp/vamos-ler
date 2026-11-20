@@ -4,18 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Vamos Ler!</title>
-<meta name="theme-color" content="#FF7A59">
-<meta name="description" content="Jogo para aprender a ler em português de Portugal, para crianças a partir dos 5 anos.">
+<link rel="stylesheet" href="fonts/fonts.css">
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" type="image/png" href="icons/icon-192.png">
-<link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name="theme-color" content="#FF7A59">
+<meta name="description" content="Jogo para aprender a ler, em português de Portugal e em inglês, para crianças de 5 anos.">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
 <style>
-@font-face{font-family:'Andika';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/andika-400.woff2) format('woff2')}
-@font-face{font-family:'Andika';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/andika-700.woff2) format('woff2')}
-@font-face{font-family:'Fredoka';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/fredoka-500.woff2) format('woff2')}
-@font-face{font-family:'Fredoka';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/fredoka-600.woff2) format('woff2')}
-@font-face{font-family:'Fredoka';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/fredoka-700.woff2) format('woff2')}
-
 :root{
   --bg:#FFF6E6; --ink:#2D2A4A; --muted:#7A7598;
   --orange:#FF7A59; --blue:#3CB4E5; --green:#5DBB63; --purple:#A57FEA; --pink:#F06BA8; --yellow:#FFC93C; --red:#F0546A;
@@ -1305,10 +1302,9 @@ window.speakables = speakables;
 applyLang();
 updateStars(false);
 document.body.classList.add('on-home');
-/* ---------- App instalável e offline ---------- */
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
-}
+</script>
+<script>
+if ('serviceWorker' in navigator) window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
 </script>
 </body>
 </html>

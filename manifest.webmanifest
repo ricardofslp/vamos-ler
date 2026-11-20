@@ -1,7 +1,7 @@
 {
   "name": "Vamos Ler!",
   "short_name": "Vamos Ler",
-  "description": "Aprender a ler em português de Portugal e em inglês, com a coruja Lia.",
+  "description": "Jogo para aprender a ler, em português de Portugal e em inglês, para crianças de 5 anos.",
   "lang": "pt-PT",
   "start_url": "./",
   "scope": "./",
@@ -9,10 +9,6 @@
   "orientation": "any",
   "background_color": "#FFF6E6",
   "theme_color": "#FF7A59",
-  "categories": [
-    "education",
-    "kids"
-  ],
   "icons": [
     {
       "src": "icons/icon-192.png",
