@@ -18,7 +18,7 @@ Depois da primeira visita, o jogo funciona **sem internet**.
 - Vamos Brincar! — https://ricardofslp.github.io/vamos-brincar/
 
 ## Créditos
-- **Voz em português:** modelo "dii" de OpenVoiceOS (pt-PT), gerado com sherpa-onnx. Licença **CC BY-NC-SA 4.0**: os ficheiros de áudio só podem ser usados sem fins comerciais, com atribuição e com a mesma licença.
+- **Voz em português:** Fernanda (pt-PT-FernandaNeural), voz neural do Microsoft Azure AI Speech.
 - **Voz em inglês:** Kokoro, voz "bf_isabella", gerada com sherpa-onnx. Licença Apache 2.0.
 - **Tipos de letra:** Andika (SIL International) e Fredoka, ambos com a licença SIL Open Font License 1.1 (ver `fonts/`).
 - Os desenhos são emojis do próprio dispositivo.

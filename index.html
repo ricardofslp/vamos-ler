@@ -353,7 +353,7 @@ PACKS.pt = {
     vOther: 'Só foram encontradas vozes do Brasil.',
     vOk: 'Experimente as vozes com ▶ Testar e escolha a que soa melhor.',
     vAndroid: 'No Android: <i>Definições → Gestão geral → Idioma → Saída de texto para voz</i> → motor Google → ⚙ → <i>Instalar dados de voz</i> → <i>Português (Portugal)</i>.',
-    credits: 'Voz natural: modelo "dii" de OpenVoiceOS (CC BY-NC-SA 4.0), gerada com sherpa-onnx.'
+    credits: 'Voz natural: Fernanda (Microsoft Azure, voz neural de Portugal).'
   },
   say: {
     hello: 'Olá! Eu sou a Lia, a coruja.',
@@ -840,7 +840,7 @@ function roundAnswers(pool) {
 
 /* ---------- Se a criança ficar parada, a Lia volta a chamá-la (no máximo 2 vezes) ---------- */
 let idleT = null, idleCount = 0;
-function idleStart(fn) { idleStop(); idleT = setTimeout(() => { if (idleCount++ < 2) { liaMood('think'); say([pick(P.say.idle), fn()], () => idleStart(fn)); } }, 12000); }
+function idleStart(fn) { idleStop(); idleT = setTimeout(() => { if (idleCount++ < 2) { liaMood('think'); say([pick(P.say.idle), fn()], () => idleStart(fn)); } }, 30000); }
 function idleStop() { clearTimeout(idleT); idleT = null; }
 
 /* ---------- Textos do ecrã ---------- */
